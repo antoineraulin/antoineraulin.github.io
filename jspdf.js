@@ -8437,7 +8437,7 @@
                 if (!url) return;
                 var img = new Image();
                 found_images = ++x;
-                img.crossOrigin = 'use-credentials';
+                img.crossOrigin = 'anonymous';
                 img.onerror = img.onload = function () {
                     if (img.complete) {
                         //to support data urls in images, set width and height
